@@ -1,39 +1,49 @@
+:root {
+  --color-white: #fff;
+  --color-gray: #c4c4c4;
+  --color-black: #000;
+  --color-purple: #8000ff;
+  --color-light-purple: #cf59e6;
+  --color-light-blue: #6bc5f8;
+}
 .App {
-  text-align: center;
-  background-color: #282c34;
+  font-family:'Maven Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #10101a;
+  color: var(--color-white);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span{
+  color: var(--color-purple);
 }
+.ctn-menu{
+  position: fixed;
+  top: 2rem;
+  right: 0;
+  left: 0;
+  padding: 0.5rem 4rem;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+  background: rgba(42,43,56,.5);
+  border: 0.2rem solid #2a2b37;
+  backdrop-filter: blur(104px);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.ctn-main h1{
+  padding: 140px 70px 10px 70px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.ctn-main p{
+  padding: 0px 70px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .ctn-proyectos, .ctn-habilidades, .ctn-contactame{
+  padding: 70px;
+}
+.ctn-main.descripcion-detallada{
+  font-style: "regular";
 }
