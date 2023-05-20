@@ -19,27 +19,56 @@ function App() {
               
           </div>
        </div>
-       <div className="ctn-habilidades">
-          <h2>Habilidades</h2>
-          <ul>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>React JS</li>
-            <li>Python</li>
-            <li>Express JS</li>
-          </ul>
-       </div>
+     
        <div className="ctn-proyectos">
           <h2>Mis Proyectos</h2>
+          <div className="proyects">
+               <div className="card-proyect">
+                  <h4>Pyxel</h4>
+                  <img></img>
+                  <a href="https://serene-feynman-bea74e.netlify.app/index.html">Visitar website</a>
+               </div>
+               <div className="card-proyect">
+                  <h4>SAAD</h4>
+                  <img></img>
+                  <a href="http://hexacode.tis.cs.umss.edu.bo/">Visitar website</a>
+               </div>
+               <div className="card-proyect">
+                  <h4>Pagina web Blender</h4>
+                  <img></img>
+                  <a href="http://hexacode.tis.cs.umss.edu.bo/">Visitar website</a>
+
+               </div>
+          </div>
+       </div>
+       <div className="ctn-habilidades">
+          <h2>Habilidades</h2>
+          <div className="ctn-cards-hability">
+            <div className="card-hability">
+               <h4 className="card-hability-titulo">Java</h4>
+               <img className="card-hability-imagen" src={require('./Imagenes/java.png')} alt="imagen" />
+            </div>
+            <div className="card-hability">
+               <h4 className="card-hability-titulo">Javascript</h4>
+               <img className="card-hability-imagen" src={require('./Imagenes/javascript.png')} alt="imagen" />
+            </div>
+            <div className="card-hability">
+               <h4 className="card-hability-titulo">React JS</h4>
+               <img className="card-hability-imagen" src={require('./Imagenes/react.png')} alt="imagen" />
+            </div>
+          </div>
+
+      
        </div>
        <div className="ctn-contactame">
          <h2>Contactame</h2>
           <ul>
-            <li><a href="#" >Linkedln</a></li>
-            <li><a href="#" >Correo Electronico</a></li>
+            <li><a href="https://linkedin.com/in/karen-choquecallata-6294811b8" target="_blank" >Linkedln</a></li>
+            <li><a href="" >Correo Electronico</a></li>
             <li><a href="#" >Celular</a></li>
            </ul>
        </div>
+       
 
     </div>
   );
